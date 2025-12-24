@@ -3,22 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.S. Securities Tokenization: Regulatory Guide 2025</title>
-    <meta name="description" content="Overview of blockchain-based securities settlement in U.S. capital markets. Explore NASDAQ, DTCC developments, regulatory framework, and global tokenization trends.">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="U.S. Securities Tokenization: Regulatory Guide 2025">
-    <meta property="og:description" content="Overview of blockchain-based securities settlement in U.S. capital markets. Explore NASDAQ, DTCC developments, regulatory framework, and global tokenization trends.">
-    <meta property="og:image" content="favicon.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="U.S. Securities Tokenization: Regulatory Guide 2025">
-    <meta name="twitter:description" content="Overview of blockchain-based securities settlement in U.S. capital markets. Explore NASDAQ, DTCC developments, regulatory framework, and global tokenization trends.">
-    <meta name="twitter:image" content="favicon.png">
-
-    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Xaults Memo - US Securities Tokenization</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -1100,7 +1085,7 @@
                         <div class="t-content-box">
                             <div class="t-title">SEC Tokenization Roundtable</div>
                             <div class="t-desc">"Moving Assets Onchain" public discussion</div>
-                            <div class="t-source"><a href="https://www.freewritings.law/2025/04/sec-crypto-task-force-holds-roundtable-on-crypto-custody/" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/newsroom/press-releases/2025-84" target="_blank">→ SEC.gov</a></div>
                         </div>
                         <div class="t-stem"></div>
                         <div class="t-dot"></div>
@@ -1124,7 +1109,7 @@
                         <div class="t-content-box">
                             <div class="t-title">Chairman Atkins Initiative</div>
                             <div class="t-desc">Framework development announced</div>
-                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-digital-finance-revolution-073125" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-073125" target="_blank">→ SEC.gov</a></div>
                         </div>
                         <div class="t-stem"></div>
                         <div class="t-dot"></div>
@@ -1142,7 +1127,7 @@
                         <div class="t-content-box">
                             <div class="t-title">NASDAQ SEC Filing</div>
                             <div class="t-desc">SR-NASDAQ-2025-072 submitted</div>
-                            <div class="t-source"><a href="https://www.gtlaw.com/en/insights/2025/9/nasdaq-proposes-rule-changes-to-enable-trading-of-tokenized-securities" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf" target="_blank">→ SEC.gov</a></div>
                         </div>
                     </div>
 
@@ -1154,7 +1139,7 @@
                         <div class="t-content-box">
                             <div class="t-title">Token Taxonomy</div>
                             <div class="t-desc">Four-category classification framework</div>
-                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-111225" target="_blank">→ SEC.gov</a></div>
                         </div>
                         <div class="t-stem"></div>
                         <div class="t-dot"></div>
@@ -1169,7 +1154,7 @@
                         <div class="t-content-box">
                             <div class="t-title">DTC Authorization</div>
                             <div class="t-desc">SEC No-Action Letter issued</div>
-                            <div class="t-source"><a href="https://www.dtcc.com/digital-assets/tokenization" target="_blank">→ DTCC.com</a></div>
+                            <div class="t-source"><a href="https://www.dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets" target="_blank">→ DTCC.com</a></div>
                         </div>
                     </div>
                 </div>
@@ -1183,13 +1168,13 @@
                 <div class="chairman-badge">SEC Chairman</div>
                 <div class="quote-name">Paul S. Atkins</div>
                 <p class="quote-text">"The migration to on-chain securities has the potential to remodel aspects of the securities market by enabling entirely new methods of issuing, trading, owning, and using securities."</p>
-                <div class="quote-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto" target="_blank">→ SEC Speech, November 2025</a></div>
+                <div class="quote-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-111225" target="_blank">→ SEC Speech, November 2025</a></div>
             </div>
             <div class="quote-card chairman">
                 <div class="chairman-badge">SEC Chairman</div>
                 <div class="quote-name">Paul S. Atkins</div>
                 <p class="quote-text">"This could become a core feature of American markets in just a few years... maybe not even ten years, maybe a couple of years from now."</p>
-                <div class="quote-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-digital-finance-revolution-073125" target="_blank">→ SEC Speech, July 2025</a></div>
+                <div class="quote-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-073125" target="_blank">→ SEC Speech, July 2025</a></div>
             </div>
             <div class="quote-card">
                 <div class="quote-role">SEC Commissioner</div>
@@ -1265,7 +1250,7 @@
                 <div class="reg-item">
                     <h4>What Framework?</h4>
                     <p>Existing SEC/NMS regulations. NASDAQ operates tokenized trading under its current exchange license — no new regulatory category created.</p>
-                    <div class="source"><a href="https://www.gtlaw.com/en/insights/2025/9/nasdaq-proposes-rule-changes-to-enable-trading-of-tokenized-securities" target="_blank">→ SEC Filing §3.2</a></div>
+                    <div class="source"><a href="https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf" target="_blank">→ SEC Filing §3.2</a></div>
                 </div>
                 <div class="reg-item">
                     <h4>Exemptions Granted?</h4>
@@ -1275,7 +1260,7 @@
                 <div class="reg-item">
                     <h4>Key Conditions</h4>
                     <p>Permissioned blockchain only. DTC as central operator. T+1 settlement maintained. Full audit trail. Registered wallets only.</p>
-                    <div class="source"><a href="https://www.dtcc.com/digital-assets/tokenization" target="_blank">→ DTCC Announcement</a></div>
+                    <div class="source"><a href="https://www.dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets" target="_blank">→ DTCC Announcement</a></div>
                 </div>
             </div>
         </div>
@@ -1289,7 +1274,7 @@
                     <h4>United States</h4>
                     <p>SEC authorization for DTC tokenization; NASDAQ filing pending</p>
                     <span class="status active">Live Authorization</span>
-                    <a class="source-link" href="https://www.gtlaw.com/en/insights/2025/9/nasdaq-proposes-rule-changes-to-enable-trading-of-tokenized-securities" target="_blank">→ SEC Filing</a>
+                    <a class="source-link" href="https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf" target="_blank">→ SEC Filing</a>
                 </div>
                 <div class="global-item">
                     <div class="global-flag">🇸🇬</div>
@@ -1322,7 +1307,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">📄</span>
-                        <a href="https://www.gtlaw.com/en/insights/2025/9/nasdaq-proposes-rule-changes-to-enable-trading-of-tokenized-securities" target="_blank">SR-NASDAQ-2025-072</a>
+                        <a href="https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf" target="_blank">SR-NASDAQ-2025-072</a>
                         <span class="org">SEC.gov</span>
                     </div>
                     <p class="source-desc">NASDAQ's proposed rule change to enable trading of tokenized securities. Details how tokenized and traditional shares trade on same order book with same priority, using DTC for settlement.</p>
@@ -1330,7 +1315,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">📄</span>
-                        <a href="https://www.dtcc.com/digital-assets/tokenization" target="_blank">DTC Tokenization Announcement</a>
+                        <a href="https://www.dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets" target="_blank">DTC Tokenization Announcement</a>
                         <span class="org">DTCC.com</span>
                     </div>
                     <p class="source-desc">DTCC's announcement of SEC No-Action Letter authorizing tokenization of equities, ETFs, and U.S. Treasuries on pre-approved blockchains for three years.</p>
@@ -1338,7 +1323,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">🎤</span>
-                        <a href="https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto" target="_blank">Chairman Atkins Speech (Nov)</a>
+                        <a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-111225" target="_blank">Chairman Atkins Speech (Nov)</a>
                         <span class="org">SEC.gov</span>
                     </div>
                     <p class="source-desc">SEC Chairman's keynote on tokenization as "core feature" of U.S. markets, including four-category token taxonomy framework.</p>
@@ -1362,7 +1347,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">📄</span>
-                        <a href="https://www.freewritings.law/2025/04/sec-crypto-task-force-holds-roundtable-on-crypto-custody/" target="_blank">SEC Tokenization Roundtable</a>
+                        <a href="https://www.sec.gov/newsroom/press-releases/2025-84" target="_blank">SEC Tokenization Roundtable</a>
                         <span class="org">SEC.gov</span>
                     </div>
                     <p class="source-desc">SEC's May 2025 public roundtable "Moving Assets Onchain" — first major regulatory signal on tokenized securities framework.</p>
@@ -1387,6 +1372,10 @@
             <p class="perspective-note">The following observations represent Xaults' interpretation and potential relevance to Indian capital markets.</p>
             
             <div class="perspective-grid">
+                <div class="perspective-card highlight">
+                    <h4>🔗 Direct Alignment with Xaults Approach</h4>
+                    <p>The NASDAQ filing explicitly states that tokenized securities must be "fungible with, share the same CUSIP number with, and afford shareholders the same material rights and privileges" as traditional securities. This is precisely how Xaults structures tokenized trade finance instruments — programmable tokens backed by real banking infrastructure, maintaining full legal equivalence with traditional instruments.</p>
+                </div>
                 <div class="perspective-card">
                     <h4>Depository Infrastructure Parallel</h4>
                     <p>DTCC's central role mirrors potential CDSL/NSDL positioning. The U.S. approach keeps existing depositories central rather than disintermediating them — aligning with SEBI's regulatory philosophy.</p>
