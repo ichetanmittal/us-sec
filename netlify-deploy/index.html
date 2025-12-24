@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.S. Securities Tokenization: Regulatory Guide 2025</title>
+    <title>Xaults Memo - US Securities Tokenization</title>
     <meta name="description" content="Overview of blockchain-based securities settlement in U.S. capital markets. Explore NASDAQ, DTCC developments, regulatory framework, and global tokenization trends.">
 
     <!-- Open Graph / Facebook -->
@@ -166,8 +166,6 @@
         /* Clean Timeline */
         .timeline-section {
             margin-bottom: 54px;
-            page-break-inside: avoid;
-            break-inside: avoid;
         }
 
         .timeline-phases {
@@ -192,10 +190,8 @@
         /* Timeline Container */
         .timeline-container {
             position: relative;
-            padding: 80px 0 80px;
+            padding: 150px 0 150px;
             margin-top: 20px;
-            page-break-inside: avoid;
-            break-inside: avoid;
         }
 
         /* Main horizontal line */
@@ -252,7 +248,7 @@
         /* Above items: content at top */
         .timeline-item.above .t-content-box {
             position: absolute;
-            bottom: calc(50% + 40px);
+            bottom: calc(50% + 70px);
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -261,7 +257,7 @@
 
         .timeline-item.above .t-date {
             position: absolute;
-            top: calc(50% + 40px);
+            top: calc(50% + 70px);
             left: 50%;
             transform: translateX(-50%);
         }
@@ -269,7 +265,7 @@
         /* Below items: content at bottom */
         .timeline-item.below .t-content-box {
             position: absolute;
-            top: calc(50% + 40px);
+            top: calc(50% + 70px);
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -278,7 +274,7 @@
 
         .timeline-item.below .t-date {
             position: absolute;
-            bottom: calc(50% + 40px);
+            bottom: calc(50% + 70px);
             left: 50%;
             transform: translateX(-50%);
         }
@@ -303,7 +299,7 @@
             position: absolute;
             left: 50%;
             width: 2px;
-            height: 35px;
+            height: 60px;
             transform: translateX(-50%);
         }
 
@@ -824,10 +820,238 @@
             margin-left: 14px;
         }
 
-        /* Responsive */
+        /* Inline Phase Headers (hidden on desktop) */
+        .phase-header-inline {
+            display: none;
+        }
+
+        /* Responsive - Tablet */
         @media (max-width: 800px) {
             .quotes-grid, .perspective-grid, .source-list { grid-template-columns: 1fr; }
             .reg-grid, .global-grid { grid-template-columns: repeat(2, 1fr); }
+            .perspective-card.highlight { grid-column: span 1; }
+        }
+
+        /* Responsive - Mobile */
+        @media (max-width: 600px) {
+            body { font-size: 14px; }
+            
+            .page { padding: 24px 18px; }
+            
+            .header { flex-direction: column; gap: 8px; align-items: flex-start; }
+            .header-right { font-size: 20px; }
+            
+            h1 { font-size: 26px; }
+            h2 { font-size: 20px; }
+            h2 span { display: block; margin-left: 0; margin-top: 4px; }
+            
+            .subtitle { font-size: 15px; }
+            
+            .exec-summary { padding: 20px; }
+            .exec-summary li { font-size: 14px; padding-left: 18px; }
+            
+            /* Timeline - Hide top phase labels on mobile */
+            .timeline-phases { 
+                display: none;
+            }
+            
+            /* Show inline phase headers on mobile */
+            .phase-header-inline {
+                display: block;
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                padding: 8px 14px;
+                border-radius: 6px;
+                margin-bottom: 16px;
+                margin-left: 0;
+                position: relative;
+            }
+            
+            .phase-header-inline.signaling {
+                background: var(--blue-bg);
+                color: var(--blue);
+                border-left: 4px solid var(--blue);
+            }
+            
+            .phase-header-inline.response {
+                background: var(--orange-bg);
+                color: var(--orange);
+                border-left: 4px solid var(--orange);
+            }
+            
+            .phase-header-inline.authorization {
+                background: var(--green-bg);
+                color: var(--green);
+                border-left: 4px solid var(--green);
+            }
+            
+            .timeline-container {
+                padding: 20px 0 20px 20px;
+            }
+            
+            .timeline-line {
+                top: 0;
+                bottom: 0;
+                left: 20px;
+                right: auto;
+                width: 3px;
+                height: auto;
+                transform: none;
+            }
+            
+            .timeline-line::before {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .timeline-line::after {
+                top: auto;
+                bottom: -6px;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                border-top: 14px solid var(--gray-300);
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: none;
+            }
+            
+            .timeline-items {
+                flex-direction: column;
+                gap: 28px;
+                padding-left: 40px;
+            }
+            
+            .timeline-item {
+                flex: none;
+                align-items: flex-start;
+            }
+            
+            .timeline-item.above .t-content-box,
+            .timeline-item.below .t-content-box {
+                position: relative;
+                bottom: auto;
+                top: auto;
+                left: auto;
+                transform: none;
+                text-align: left;
+                width: 100%;
+            }
+            
+            .timeline-item.above .t-date,
+            .timeline-item.below .t-date {
+                position: relative;
+                top: auto;
+                bottom: auto;
+                left: auto;
+                transform: none;
+                margin-bottom: 6px;
+            }
+            
+            .t-dot {
+                position: absolute;
+                top: 8px;
+                left: -30px;
+                transform: none;
+            }
+            
+            .t-stem {
+                position: absolute;
+                left: -24px;
+                top: 20px;
+                width: 18px;
+                height: 2px;
+            }
+            
+            .timeline-item.above .t-stem,
+            .timeline-item.below .t-stem {
+                top: 12px;
+                bottom: auto;
+            }
+            
+            .t-content-box { width: 100% !important; }
+            .t-title { font-size: 14px; }
+            .t-desc { font-size: 12px; }
+            
+            /* Grids - Keep global-grid as 2 columns on mobile */
+            .quotes-grid, 
+            .perspective-grid, 
+            .source-list,
+            .reg-grid { 
+                grid-template-columns: 1fr; 
+            }
+            
+            /* Global Context - 2 columns, more compact */
+            .global-grid { 
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 16px;
+            }
+            
+            .global-context { padding: 18px; }
+            .global-context h3 { font-size: 14px; margin-bottom: 16px; }
+            .global-flag { font-size: 24px; margin-bottom: 6px; }
+            .global-item h4 { font-size: 13px; margin-bottom: 4px; }
+            .global-item p { font-size: 11px; margin-bottom: 6px; line-height: 1.4; }
+            .global-item .status { font-size: 9px; padding: 3px 8px; margin-bottom: 6px; }
+            .global-item .source-link { font-size: 10px; margin-top: 4px; }
+            
+            .perspective-card.highlight { grid-column: span 1; }
+            
+            .quote-card { padding: 18px 20px; }
+            .quote-card.chairman .quote-name { font-size: 18px; }
+            .quote-card.chairman .quote-text { font-size: 14px; }
+            
+            .reg-framework, .source-docs { 
+                padding: 20px; 
+            }
+            
+            .step-header { gap: 14px; }
+            .step-number { font-size: 26px; min-width: 40px; }
+            .step-content h3 { font-size: 16px; }
+            .step-content p { font-size: 14px; }
+            
+            .xaults-perspective { margin-left: 54px; padding: 12px 14px; }
+            
+            .perspective-card { padding: 16px 18px; }
+            .perspective-card h4 { font-size: 14px; }
+            .perspective-card p { font-size: 12px; }
+            
+            .source-item-detailed { padding: 12px 14px; }
+            .source-item-detailed .source-header { 
+                flex-wrap: wrap; 
+                gap: 6px;
+            }
+            .source-item-detailed .org { 
+                margin-left: 0; 
+                width: 100%;
+                margin-top: 4px;
+            }
+            
+            .footer { 
+                flex-direction: column; 
+                gap: 12px; 
+                text-align: center;
+            }
+            .footer-right { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+            .confidential-tag { margin-left: 0; }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 380px) {
+            .page { padding: 16px 12px; }
+            h1 { font-size: 22px; }
+            .timeline-items { padding-left: 35px; }
+            .xaults-perspective { margin-left: 40px; }
+            .global-grid { gap: 12px; }
+            .global-item p { font-size: 10px; }
         }
     </style>
 </head>
@@ -868,12 +1092,15 @@
                 <div class="timeline-line"></div>
                 
                 <div class="timeline-items">
+                    <!-- Phase Header: Regulatory Signaling -->
+                    <div class="phase-header-inline signaling">Regulatory Signaling</div>
+                    
                     <!-- Item 1: Above -->
                     <div class="timeline-item above blue">
                         <div class="t-content-box">
                             <div class="t-title">SEC Tokenization Roundtable</div>
                             <div class="t-desc">"Moving Assets Onchain" public discussion</div>
-                            <div class="t-source"><a href="https://www.freewritings.law/2025/04/sec-crypto-task-force-holds-roundtable-on-crypto-custody/" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/newsroom/press-releases/2025-84" target="_blank">→ SEC.gov</a></div>
                         </div>
                         <div class="t-stem"></div>
                         <div class="t-dot"></div>
@@ -888,7 +1115,7 @@
                         <div class="t-content-box">
                             <div class="t-title">Commissioner Peirce Statement</div>
                             <div class="t-desc">"Tokenized securities are still securities"</div>
-                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/peirce-statement-tokenized-securities-070925" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/peirce-tokenization-070925" target="_blank">→ SEC.gov</a></div>
                         </div>
                     </div>
 
@@ -897,12 +1124,15 @@
                         <div class="t-content-box">
                             <div class="t-title">Chairman Atkins Initiative</div>
                             <div class="t-desc">Framework development announced</div>
-                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-digital-finance-revolution-073125" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-073125" target="_blank">→ SEC.gov</a></div>
                         </div>
                         <div class="t-stem"></div>
                         <div class="t-dot"></div>
                         <div class="t-date">July 31, 2025</div>
                     </div>
+
+                    <!-- Phase Header: Market Response -->
+                    <div class="phase-header-inline response">Market Response</div>
 
                     <!-- Item 4: Below -->
                     <div class="timeline-item below orange">
@@ -912,16 +1142,19 @@
                         <div class="t-content-box">
                             <div class="t-title">NASDAQ SEC Filing</div>
                             <div class="t-desc">SR-NASDAQ-2025-072 submitted</div>
-                            <div class="t-source"><a href="https://www.gtlaw.com/en/insights/2025/9/nasdaq-proposes-rule-changes-to-enable-trading-of-tokenized-securities" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf" target="_blank">→ SEC.gov</a></div>
                         </div>
                     </div>
+
+                    <!-- Phase Header: Authorization -->
+                    <div class="phase-header-inline authorization">Authorization</div>
 
                     <!-- Item 5: Above -->
                     <div class="timeline-item above green">
                         <div class="t-content-box">
                             <div class="t-title">Token Taxonomy</div>
                             <div class="t-desc">Four-category classification framework</div>
-                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto" target="_blank">→ SEC.gov</a></div>
+                            <div class="t-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-111225" target="_blank">→ SEC.gov</a></div>
                         </div>
                         <div class="t-stem"></div>
                         <div class="t-dot"></div>
@@ -936,7 +1169,7 @@
                         <div class="t-content-box">
                             <div class="t-title">DTC Authorization</div>
                             <div class="t-desc">SEC No-Action Letter issued</div>
-                            <div class="t-source"><a href="https://www.dtcc.com/digital-assets/tokenization" target="_blank">→ DTCC.com</a></div>
+                            <div class="t-source"><a href="https://www.dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets" target="_blank">→ DTCC.com</a></div>
                         </div>
                     </div>
                 </div>
@@ -950,13 +1183,13 @@
                 <div class="chairman-badge">SEC Chairman</div>
                 <div class="quote-name">Paul S. Atkins</div>
                 <p class="quote-text">"The migration to on-chain securities has the potential to remodel aspects of the securities market by enabling entirely new methods of issuing, trading, owning, and using securities."</p>
-                <div class="quote-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto" target="_blank">→ SEC Speech, November 2025</a></div>
+                <div class="quote-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-111225" target="_blank">→ SEC Speech, November 2025</a></div>
             </div>
             <div class="quote-card chairman">
                 <div class="chairman-badge">SEC Chairman</div>
                 <div class="quote-name">Paul S. Atkins</div>
                 <p class="quote-text">"This could become a core feature of American markets in just a few years... maybe not even ten years, maybe a couple of years from now."</p>
-                <div class="quote-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-digital-finance-revolution-073125" target="_blank">→ SEC Speech, July 2025</a></div>
+                <div class="quote-source"><a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-073125" target="_blank">→ SEC Speech, July 2025</a></div>
             </div>
             <div class="quote-card">
                 <div class="quote-role">SEC Commissioner</div>
@@ -1032,7 +1265,7 @@
                 <div class="reg-item">
                     <h4>What Framework?</h4>
                     <p>Existing SEC/NMS regulations. NASDAQ operates tokenized trading under its current exchange license — no new regulatory category created.</p>
-                    <div class="source"><a href="https://www.gtlaw.com/en/insights/2025/9/nasdaq-proposes-rule-changes-to-enable-trading-of-tokenized-securities" target="_blank">→ SEC Filing §3.2</a></div>
+                    <div class="source"><a href="https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf" target="_blank">→ SEC Filing §3.2</a></div>
                 </div>
                 <div class="reg-item">
                     <h4>Exemptions Granted?</h4>
@@ -1042,7 +1275,7 @@
                 <div class="reg-item">
                     <h4>Key Conditions</h4>
                     <p>Permissioned blockchain only. DTC as central operator. T+1 settlement maintained. Full audit trail. Registered wallets only.</p>
-                    <div class="source"><a href="https://www.dtcc.com/digital-assets/tokenization" target="_blank">→ DTCC Announcement</a></div>
+                    <div class="source"><a href="https://www.dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets" target="_blank">→ DTCC Announcement</a></div>
                 </div>
             </div>
         </div>
@@ -1056,7 +1289,7 @@
                     <h4>United States</h4>
                     <p>SEC authorization for DTC tokenization; NASDAQ filing pending</p>
                     <span class="status active">Live Authorization</span>
-                    <a class="source-link" href="https://www.gtlaw.com/en/insights/2025/9/nasdaq-proposes-rule-changes-to-enable-trading-of-tokenized-securities" target="_blank">→ SEC Filing</a>
+                    <a class="source-link" href="https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf" target="_blank">→ SEC Filing</a>
                 </div>
                 <div class="global-item">
                     <div class="global-flag">🇸🇬</div>
@@ -1089,7 +1322,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">📄</span>
-                        <a href="https://www.gtlaw.com/en/insights/2025/9/nasdaq-proposes-rule-changes-to-enable-trading-of-tokenized-securities" target="_blank">SR-NASDAQ-2025-072</a>
+                        <a href="https://www.sec.gov/files/rules/sro/nasdaq/2025/34-103989.pdf" target="_blank">SR-NASDAQ-2025-072</a>
                         <span class="org">SEC.gov</span>
                     </div>
                     <p class="source-desc">NASDAQ's proposed rule change to enable trading of tokenized securities. Details how tokenized and traditional shares trade on same order book with same priority, using DTC for settlement.</p>
@@ -1097,7 +1330,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">📄</span>
-                        <a href="https://www.dtcc.com/digital-assets/tokenization" target="_blank">DTC Tokenization Announcement</a>
+                        <a href="https://www.dtcc.com/news/2025/december/11/paving-the-way-to-tokenized-dtc-custodied-assets" target="_blank">DTC Tokenization Announcement</a>
                         <span class="org">DTCC.com</span>
                     </div>
                     <p class="source-desc">DTCC's announcement of SEC No-Action Letter authorizing tokenization of equities, ETFs, and U.S. Treasuries on pre-approved blockchains for three years.</p>
@@ -1105,7 +1338,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">🎤</span>
-                        <a href="https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto" target="_blank">Chairman Atkins Speech (Nov)</a>
+                        <a href="https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-111225" target="_blank">Chairman Atkins Speech (Nov)</a>
                         <span class="org">SEC.gov</span>
                     </div>
                     <p class="source-desc">SEC Chairman's keynote on tokenization as "core feature" of U.S. markets, including four-category token taxonomy framework.</p>
@@ -1113,7 +1346,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">🎤</span>
-                        <a href="https://www.sec.gov/newsroom/speeches-statements/peirce-statement-tokenized-securities-070925" target="_blank">Commissioner Peirce Statement</a>
+                        <a href="https://www.sec.gov/newsroom/speeches-statements/peirce-tokenization-070925" target="_blank">Commissioner Peirce Statement</a>
                         <span class="org">SEC.gov</span>
                     </div>
                     <p class="source-desc">"Tokenized securities are still securities" — Commissioner Peirce clarifying that federal securities laws apply to tokenized instruments.</p>
@@ -1129,7 +1362,7 @@
                 <div class="source-item-detailed">
                     <div class="source-header">
                         <span class="icon">📄</span>
-                        <a href="https://www.freewritings.law/2025/04/sec-crypto-task-force-holds-roundtable-on-crypto-custody/" target="_blank">SEC Tokenization Roundtable</a>
+                        <a href="https://www.sec.gov/newsroom/press-releases/2025-84" target="_blank">SEC Tokenization Roundtable</a>
                         <span class="org">SEC.gov</span>
                     </div>
                     <p class="source-desc">SEC's May 2025 public roundtable "Moving Assets Onchain" — first major regulatory signal on tokenized securities framework.</p>
@@ -1175,10 +1408,6 @@
                     <p>The U.S. approach is exchange-initiated (NASDAQ filing) with regulatory approval. India could consider NSE/BSE-led proposals or a SEBI-initiated sandbox framework.</p>
                 </div>
                 <div class="perspective-card">
-                    <h4>GIFT City Opportunity</h4>
-                    <p>GIFT IFSC's regulatory flexibility could allow India to pilot tokenized securities in a controlled international environment before domestic rollout — similar to Singapore's Guardian approach.</p>
-                </div>
-                <div class="perspective-card">
                     <h4>Sandbox Precedent</h4>
                     <p>RBI's regulatory sandbox has successfully tested tokenization concepts. A similar SEBI sandbox for securities tokenization could enable controlled exploration without systemic risk.</p>
                 </div>
@@ -1190,7 +1419,7 @@
             <div class="footer-left">All primary sources linked above • Public information only</div>
             <div class="footer-right">
                 xaults* Internal • December 2025
-                <span class="confidential-tag">Confidential</span>
+
             </div>
         </div>
     </div>
